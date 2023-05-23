@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Amazon clone</title>
+  <style>
+    /* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a background color for the body */
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section.banner {
+  background-color: #ddd;
+  padding: 20px;
+}
+
+.category {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.category h2 {
+  margin-bottom: 10px;
+}
+
+.products {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.product {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.product img {
+  width: 30%;
+  height: auto;
+}
+
+.product h3 {
+  margin: 10px 0;
+}
+
+.product p {
+  font-weight: bold;
+}
+
+.product button {
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+
+.product button:hover {
+  background-color: #555;
+}
+   /* Small screens */
+   @media only screen and (max-width: 600px) {
+      header {
+        padding: 10px;
+      }
+
+      header h1 {
+        font-size: 20px;
+      }
+
+      nav ul li {
+        margin-right: 5px;
+      }
+
+      .product {
+        padding: 5px;
+      }
+    }
+
+    /* Medium screens */
+    @media only screen and (min-width: 601px) and (max-width: 900px) {
+      .products {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      }
+    }
+
+  </style>
+  
+</head>
+<body>
+  <header>
+    <h1>E-Commerce Website</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Electronics</a></li>
+            <li><a href="#">Clothing</a></li>
+            <li><a href="#">Footwear</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Travel Essentials</a></li>
+        </ul>
+    </nav>
+  </header>
+  <section class="banner">
+    <h2>Welcome to Amazon</h2>
+    <p>Explore the world while sitting on your sofa</p>
+</section>
+<div class="category">
+    <h2>Electronics</h2>
+    <ul class="products">
+      <li class="product">
+        <a href="https://www.amazon.in/Apple-iPhone-Pro-Space-Black/dp/B0BDJJLDYZ/ref=sr_1_1_sspa?crid=1NOVT1NSZ4AV2&keywords=iphone+14+pro+max+1tb&qid=1683629964&sprefix=iphone+14+pro+ma%2Caps%2C341&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">
+            <img src="https://m.media-amazon.com/images/I/610pghkO81L._SX679_.jpg">
+        </a>
+          
+        <h3>iPhone 14 Pro Max</h3>
+        <p>1,35,000</p>
+        <div>
+            <button>Add to Cart</button>
+        </div>
+        <br>
+        <div>
+        <button>Buy</button>
+        </div>
+      </li>
+      <li class="product">
+        <h2>Electronics</h2>
+        <a href="https://www.amazon.in/Apple-2022-10-9-inch-iPad-Wi-Fi/dp/B0BJMGXLYZ/ref=sr_1_2_sspa?crid=3LHT7GKA883ZE&keywords=ipad%2B9th%2Bgeneration&qid=1683629822&sprefix=ipad%2Caps%2C510&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1">
+            <img src="https://m.media-amazon.com/images/I/61uA2UVnYWL._SX679_.jpg">
+        </a>
+        <h3>Apple 2022 10.9-inch iPad (Wi-Fi, 64GB) - Blue (10th Generation)</h3>
+        <p>44,900</p>
+        <div>
+            <button>Add to Cart</button>
+        </div>
+        <br>
+        <div>
+        <button>Buy</button>
+        </div>
+
+      </li>
+      <!-- Add more products here -->
+    </ul>
+  </div>
+  
+  <div class="category">
+    <h2>Electronics</h2>
+    <ul class="products">
+      <li class="product">
+        <a href="https://www.amazon.in/Haier-Refrigerators-Technology-HRS-682KS-Convertible/dp/B0B8ZMLRH4/ref=sr_1_2_sspa?crid=2BTE1WN2JZA84&keywords=refrigerator%2Bdouble%2Bdoor&qid=1683629425&sprefix=refrigerator%2B%2Caps%2C279&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1">
+            <img src="https://m.media-amazon.com/images/I/41elGLqejTL._SX679_.jpg">
+        </a>
+        <h3>LG double door refridgirattor</h3>
+        <p>64,990</p>
+        <div>
+            <button>Add to Cart</button>
+        </div>
+        <br>
+        <div>
+        <button>Buy</button>
+        </div>
+      </li>
+      
+      <li class="product">
+        <h2>Clothing</h2>
+      <a href="amazon.in/Dennis-Lingo-Medium-Casual-C501_TOWELBLUE_M/dp/B07L4QRMG1/ref=sr_1_3_sspa?crid=3RA2RZ7LGXIS5&keywords=denim%2Bshirt%2Bfor%2Bmen&qid=1683630109&sprefix=deni%2Caps%2C379&sr=8-3-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&psc=1">
+        <img src="https://m.media-amazon.com/images/I/71SajCEdvTL._UY606_.jpg">
+     </a>
+        <h3>Men's wear</h3>
+        <p>999</p>
+        <div>
+            <button>Add to Cart</button>
+        </div>
+        <br>
+        <div>
+        <button>Buy</button>
+        </div>
+      </li>
+      <!-- Add more products here -->
+    </ul>
+  </div>
+  
+  <div class="category">
+    <h2>Footwear</h2>
+    <ul class="products">
+      <li class="product">
+        <a href="https://www.amazon.in/Hush-Puppies-Formal-Shoes-11-8246872110_8246872/dp/B07BTFP55T/ref=sr_1_5?crid=2VTC8MOLOESKP&keywords=formal+shoes+for+men&qid=1683628949&s=shoes&sprefix=formal+shies%2Cshoes%2C313&sr=1-5">
+        <img src="https://m.media-amazon.com/images/I/81xG3fjG5EL._UX625_.jpg" alt="Product 1">
+        </a>
+        <h3>Formal shoe for men</h3>
+        <p>4,980</p>
+        <div>
+            <button>Add to Cart</button>
+        </div>
+        <br>
+        <div>
+        <button>Buy</button>
+        </div>
+      </li>
+      <li class="product">
+        <h2>Foot Wear</h2>
+        <a href="https://www.amazon.in/dp/B08CD6JHSV/ref=sspa_dk_detail_4?pd_rd_i=B08CD6JHSV&pd_rd_w=EDV1Y&content-id=amzn1.sym.2575ab02-73ff-40ca-8d3a-4fbe87c5a28d&pf_rd_p=2575ab02-73ff-40ca-8d3a-4fbe87c5a28d&pf_rd_r=YT82D5HWT5QQMQA4PCS8&pd_rd_wg=cJMUF&pd_rd_r=a343bbde-e6b2-4cde-ae86-d9c5f381fff6&s=shoes&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw&th=1&psc=1">
+        <img src="https://m.media-amazon.com/images/I/61alYVQeA9L._UL1500_.jpg" alt="Product 2">
+        </a>
+        <h3>Crocs for Men</h3>
+        <p>1,929</p>
+        <div>
+            <button>Add to Cart</button>
+        </div>
+        <br>
+        <div>
+        <button>Buy</button>
+        </div>
+
+      </li>
+      <li class="product">
+        <h2>Travel Essentials</h2>
+        <a href="https://www.amazon.in/Safari-Pentagon-Polypropylene-55-Hardsided/dp/B097QP6L5K?ref_=Oct_DLandingS_D_8342e880_0">
+        <img src="https://m.media-amazon.com/images/I/514xUT1xYVL._UX569_.jpg">
+        </a>
+        <h3>Safari Travel bag</h3>
+        <p>1,999</p>
+        <div>
+            <button>Add to Cart</button>
+        </div>
+        <br>
+        <div>
+        <button>Buy</button>
+        </div>
+
+      </li>
+    </li>
+    <li class="product">
+        <h2>Accessories</h2>
+      <a href="https://www.amazon.in/Titan-Edge-Analog-Multi-Color-Watch-NH1577TL01A/dp/B00ASNUQLW/ref=sr_1_2_sspa?crid=2PMOVSQ5JA6ZD&keywords=titan+watches+for+men&qid=1683628700&sprefix=titan+%2Caps%2C419&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">
+        <img src="https://m.media-amazon.com/images/I/91zDT1Fy5QL._UY550_.jpg" alt="Product 1">
+      </a>
+      <h3>Titan Wrist Watch</h3>
+      <p>15,296</p>
+      <div>
+          <button>Add to Cart</button>
+      </div>
+      <br>
+      <div>
+      <button>Buy</button>
+      </div>
+
+    </li>
+      <!-- Add more products here -->
+    </ul>
+  </div>
+  
+  <div class="category">
+    <h2>Sports</h2>
+    <ul class="products">
+      <li class="product">
+        <a href="https://www.amazon.in/Balance-DC-1280-English-Willow-Cricket/dp/B08L22CCZ8/ref=sr_1_6?crid=1FNJOQAOHREB8&keywords=new+balance+cricket+bat&qid=1683628514&sprefix=new+balance+cricket+bat%2Caps%2C273&sr=8-6">
+        <img src="https://m.media-amazon.com/images/I/51IAJ0XJmuL._SL1334_.jpg" alt="Product 1">
+        </a>
+        <h3>New Balance Cricket bat</h3>
+        <p>7,980</p>
+        <div>
+            <button>Add to Cart</button>
+        </div>
+        <br>
+        <div>
+        <button>Buy</button>
+        </div>
+      </li>
+    </section>
+    </div>
+    </body>
+    </html>
+
+     
